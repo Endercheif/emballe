@@ -192,8 +192,8 @@ class Submission extends UserContent<Submission> {
         return this;
     }
 
-    async mod(): Promise<ContentModeration<T = Submission>> {
-        return new ContentModeration<Submission>(this.reddit, this);
+    async mod(): Promise<ContentModeration<Submission>> {
+        return (new ContentModeration<Submission>(this.reddit, this) as ContentModeration<Submission>);
     }
 
     async marknsfw() {

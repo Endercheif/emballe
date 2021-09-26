@@ -1,0 +1,36 @@
+{
+  "name": "wrap-it",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Reet S",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "deploy": "yarn npm"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "btoa": "^1.2.1",
+    "typescript": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/btoa": "^1.2.3",
+    "dotenv": "^10.0.0",
+    "tslib": "^2.3.1"
+  },
+  "type": "commonjs",
+  "editions": [
+    {
+      "directory": "src",
+      "entry": "index.ts",
+      "description": "todo",
+      "tags": [
+        "typescript",
+        "import"
+      ],
+      "engines": false
+    }
+  ],
+  "keywords": []
+}
